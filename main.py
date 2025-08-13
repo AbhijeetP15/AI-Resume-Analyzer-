@@ -6,6 +6,8 @@ import base64
 from openai import OpenAI
 from dotenv import load_dotenv
 
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY") or st.secrets.get("OPENAI_API_KEY")
+
 load_dotenv()
 
 st.set_page_config(page_title="ProEdge", page_icon="✨", layout="centered")
